@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "bun  --watch http.ts",
-    "build": "bun build http.ts --target node --outdir dist --minify && bun run build:css",
     "build:dev": "bun build http.ts --target node --outdir dist",
     "build:css": "tailwindcss -i src/views/styles/tailwind.css -o public/styles/tailwind.css",
+    "build": "bun build http.ts --target node --outdir dist --minify",
     "format": "biome format .",
     "format:fix": "biome format --write .",
     "lint": "biome lint .",
