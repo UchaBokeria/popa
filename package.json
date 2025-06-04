@@ -24,7 +24,7 @@
       "biome format --write",
       "biome lint --apply"
     ],
-    "*.{json,md,css,html}": [
+    "*.{json,css,html}": [
       "biome format --write"
     ]
   },
