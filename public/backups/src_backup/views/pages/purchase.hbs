@@ -1,0 +1,23 @@
+<div x-data="cartData()" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+  <div class="lg:col-span-2">
+    <h1 class="text-3xl font-bold mb-6">Choose Your UC Package</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+      {{#each packages}}
+        <div x-data="{ package: {{json this}} }">
+          {{> components/product-card }}
+        </div>
+      {{/each}}
+    </div>
+  </div>
+  
+  <div class="lg:col-span-1">
+    {{> components/cart }}
+  </div>
+</div>
+
+<script>
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('cartData', cartData);
+  });
+</script> 

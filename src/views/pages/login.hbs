@@ -1,0 +1,44 @@
+<div class="max-w-md mx-auto">
+  <div class="bg-base-200 rounded-lg shadow-md p-6">
+    <h1 class="text-2xl font-bold mb-6 text-center">Login to Your Account</h1>
+    
+    <form hx-post="/user/login" hx-swap="outerHTML" class="space-y-4">
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text">Username or Email</span>
+        </label>
+        <input 
+          type="text" 
+          name="usernameOrEmail" 
+          placeholder="Username or Email" 
+          class="input input-bordered" 
+          required 
+        />
+      </div>
+      
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text">Password</span>
+        </label>
+        <input 
+          type="password" 
+          name="password" 
+          placeholder="Password" 
+          class="input input-bordered" 
+          required 
+        />
+        <label class="label">
+          <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+        </label>
+      </div>
+      
+      <div class="form-control mt-6">
+        <button class="btn btn-primary">Login</button>
+      </div>
+      
+      <div class="text-center mt-4">
+        <p>Don't have an account? <a href="/user/register" class="link link-primary">Register</a></p>
+      </div>
+    </form>
+  </div>
+</div> 
