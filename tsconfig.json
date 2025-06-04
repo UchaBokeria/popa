@@ -17,6 +17,7 @@
     "resolveJsonModule": true,
     "moduleDetection": "force",
     "jsx": "react-jsx",
+    "jsxImportSource": "react",
     "allowJs": true,
     "typeRoots": ["./node_modules/@types", "./src/utilities/types"],
     
@@ -32,11 +33,10 @@
       "@entities/*": ["src/entities/*"],
       "@utils/*": ["src/utilities/*"],
       "@tests/*": ["tests/*"],
-      "@app/*": ["src/app/*"],
       "@api/*": ["src/api/*"],
       "@src/*": ["src/*"],
       "@public/*": ["public/*"],
-      "@/*": ["*"],
+      "@/*": ["src/app/*"],
     },
 
     // Bundler mode

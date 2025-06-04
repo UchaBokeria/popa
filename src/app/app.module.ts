@@ -1,8 +1,8 @@
-import { Module } from 'elysia-nest';
-import { AuthModule } from '@app/auth/auth.module';
+import { Module } from "elysia-nest";
+import { AppController } from "./app.controller";
 
 @Module({
     prefix: '/',
-    children: [AuthModule],
+    controllers: [AppController],
 })
 export class AppModule {}

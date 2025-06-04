@@ -18,6 +18,5 @@ declare module 'elysia' {
             isAdmin: boolean;
             [key: string]: any;
         };
-        render: (templatePath: string, data?: Record<string, unknown>, options?: { layout?: string; alpine?: boolean }) => string;
     }
 }
