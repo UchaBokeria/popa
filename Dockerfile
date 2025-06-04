@@ -1,3 +1,4 @@
+# Use this Dockerfile with Koyeb
 FROM oven/bun:1.2 as builder
 
 WORKDIR /app

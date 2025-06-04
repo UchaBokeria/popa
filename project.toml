@@ -1,0 +1,6 @@
+[build]
+  builder = "paketobuildpacks/builder:base"
+  buildpacks = ["paketo-buildpacks/docker"]
+
+[build.args]
+  BP_DOCKER_CACHE = "true" 

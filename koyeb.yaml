@@ -30,4 +30,5 @@ services:
       - path: /
         port: 3000
     docker:
-      image: your-registry/popa:latest 
+      build:
+        dockerfile: Dockerfile 
